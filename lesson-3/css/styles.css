@@ -46,6 +46,10 @@ body {
   margin: 0 41px 0 0;
 }
 
+.header__logo:hover {
+  opacity: 0.7;
+}
+
 .header__button {
   border: none;
   background-color: transparent;
@@ -53,6 +57,10 @@ body {
 
 .header__link {
   margin: 0 0 0 34px;
+}
+
+.header__link-img:hover {
+  fill: var(--dark-pink);
 }
 
 .promo {
@@ -361,6 +369,10 @@ body {
   margin: 24px 7px;
 }
 
+.footer__social-item:hover {
+  background-color: var(--dark-pink);
+}
+
 .registration__heading {
   margin: 59px 0 0 0;
   font-style: normal;
@@ -396,10 +408,16 @@ legend {
 
 .input__form-male {
   margin: 31px 10px 31px 0;
+  vertical-align: sub;
 }
 
 .input__form-female {
   margin: 31px 10px 0 20px;
+  vertical-align: sub;
+}
+
+.registration__form {
+  margin: 0 128px 0 0;
 }
 
 .registration__form-radio {
@@ -419,5 +437,48 @@ legend {
 }
 
 .registration__form-button {
-  padding: 16px 20px 17px 29px;
+  padding: 16px 0 17px 29px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: var(--dark-pink);
+  border: none;
+  margin: 0 0 96px 0;
+}
+
+.registration__form-img {
+  margin: 0 29px 0 20px;
+}
+
+.loyalty__heading {
+  text-transform: uppercase;
+}
+
+.loyalty__heading,
+.loyalty__text,
+.loyalty__item {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyalty__text {
+  margin: 22px 0 21px 0;
+}
+
+.loyalty__item {
+  margin: 0 0 16px 43px;
+  position: relative;
+}
+
+.loyalty__item::before {
+  content: '';
+  width: 20px;
+  height: 16px;
+  background-image: url('../img/ok.svg');
+  position: absolute;
+  top: 7px;
+  left: -43px;
 }
