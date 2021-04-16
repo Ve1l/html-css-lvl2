@@ -442,6 +442,11 @@ legend {
   color: #b1b1b1;
 }
 
+label {
+  margin: 31px 10px 31px 10px;
+  vertical-align: top;
+}
+
 .header {
   background-color: #222222;
 }
@@ -862,16 +867,6 @@ legend {
 
 .registration__form-img {
   margin: 0 29px 0 20px;
-}
-
-.input__form__form-male {
-  margin: 31px 10px 31px 0;
-  vertical-align: sub;
-}
-
-.input__form__form-female {
-  margin: 31px 10px 0 20px;
-  vertical-align: sub;
 }
 
 .loyalty__heading {
