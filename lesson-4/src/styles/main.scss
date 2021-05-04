@@ -10,12 +10,31 @@
   display: flex;
   margin: 0 0 63px;
 
+  &__img {
+    width: 50%;
+    height: auto;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__heading-wrapper {
     background-color: $pink;
     flex-grow: 1;
     align-items: center;
     display: flex;
     padding: 0 0 0 92px;
+    justify-content: center;
+
+    @include tablet {
+      padding: 0 0 0 68px;
+    }
+
+    @include mobile {
+      padding: 0 0 0 83px;
+      min-height: 363px;
+    }
   }
 
   &__heading {
@@ -28,19 +47,27 @@
       content: '';
       position: absolute;
       width: 12px;
-      height: 92px;
+      height: 90px;
       background-color: $dark-pink;
       right: 104%;
       top: 4%;
+
+      @include tablet {
+        height: 80px;
+      }
     }
   }
 
   &__sub-heading {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
+    @include font(32px, 38px, 700, normal);
     display: block;
+
+    @include tablet {
+      @include font(24px, 29px, 700);
+    }
+    @include mobile {
+      @include font(20px, 24px, 700);
+    }
   }
 
   &__sub-heading-pink {
@@ -62,6 +89,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 0 30px;
+
+    @include tablet {
+      width: 32%;
+      min-height: 168px;
+      margin: 0 0 20px;
+    }
+    @include mobile {
+      width: 100%;
+      min-height: 247px;
+      margin: 0 0 32px;
+    }
   }
 
   &__text {
@@ -87,14 +126,12 @@
   &__item-woman {
     background: #fff url('../img/categories-woman.jpg') no-repeat;
     background-size: cover;
-    margin: 0 30px 0 0;
     box-shadow: 0 0 0 130px rgba(33, 22, 22, 0.7) inset;
   }
 
   &__item-man {
     background: #fff url('../img/categories-man.jpg') no-repeat;
     background-size: cover;
-    margin: 0 30px 0 0;
     box-shadow: 0 0 0 130px rgba(33, 22, 22, 0.7) inset;
   }
 
@@ -110,6 +147,15 @@
     flex-grow: 1;
     margin: 30px 0 97px 0;
     box-shadow: 0 0 0 130px rgba(33, 22, 22, 0.7) inset;
+    width: 100%;
+    min-height: 180px;
+
+    @include tablet {
+      min-height: 116px;
+    }
+    @include mobile {
+      min-height: 111px;
+    }
   }
 
   &__item-woman:hover,
@@ -125,6 +171,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__heading {
@@ -199,11 +249,23 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 103px 0;
+    height: 341px;
+    align-items: center;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 100%;
+      padding: 0 0 48px 0;
+    }
   }
 
   &__item-img {
-    margin: 0 0 28px;
+    margin: 0 0 28px 0;
+
+    @include mobile {
+      margin: 48px 0 0 0;
+    }
   }
 
   &__item-heading {
@@ -220,6 +282,12 @@
     line-height: 17px;
     color: #fbfbfb;
     opacity: 0.7;
+    margin: 0 30px;
+
+    @include mobile {
+      max-width: 360px;
+      margin: 48px 0 0 0;
+    }
   }
 }
 
