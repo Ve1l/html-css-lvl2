@@ -238,7 +238,6 @@
     &:hover {
       background-color: $dark-pink;
       color: #fff;
-      cursor: pointer;
     }
   }
 }
@@ -565,20 +564,5 @@
     border: none;
     @include font(16px, 19px, 300);
     color: #fff;
-  }
-}
-
-.product {
-  height: 536px;
-  &__box {
-    width: 1141px;
-    height: 601px;
-    left: 13%;
-    bottom: -2%;
-    background-color: #fff;
-    border: 1px solid #f7f7f7;
-  }
-  &__slider {
-    background-color: #f7f7f7;
   }
 }
